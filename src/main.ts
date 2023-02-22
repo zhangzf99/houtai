@@ -5,4 +5,7 @@ import store from "./store";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 
+// 引入mock
+require("./mock");
+
 createApp(App).use(store).use(router).use(ElementPlus).mount("#app");

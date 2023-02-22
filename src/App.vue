@@ -44,7 +44,6 @@ let showMenu = ref(true);
 let noMenu = ["/login"];
 
 router.beforeEach((to, from, next) => {
-  console.log("to", to);
   if (to.path == "/login") {
     // 如果路径是 /login 则正常执行
     next();
@@ -56,10 +55,10 @@ router.beforeEach((to, from, next) => {
 
 // const;
 const handleOpen = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath);
+  // console.log(key, keyPath);
 };
 const handleClose = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath);
+  // console.log(key, keyPath);
 };
 const handleSelect = (index: number, indexPath: string) => {
   console.log(" index, indexPath", index, indexPath);
